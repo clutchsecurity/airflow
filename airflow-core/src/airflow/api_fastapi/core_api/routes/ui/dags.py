@@ -17,6 +17,8 @@
 
 from __future__ import annotations
 
+import logging
+from datetime import datetime
 from http.client import HTTPException
 from typing import Annotated
 
@@ -118,6 +120,10 @@ def get_dags(
 ) -> DAGWithLatestDagRunsCollectionResponse:
     """Get DAGs with recent DagRun."""
     # Fetch DAGs with their latest DagRun and apply filters
+    logger = logging.getLogger(__name__)
+
+    if tags and 'ETL' in tags.tags_list:
+        logger.info(f'Getting DAGs with ETL Label at {datetime.now()}')
     query = generate_dag_with_latest_run_query(
         max_run_filters=[
             last_dag_run_state,
@@ -152,6 +158,8 @@ def get_dags(
     )
 
     dags = [dag for dag in session.scalars(dags_select)]
+    if tags and 'ETL' in tags.tags_list:
+        logger.info(f'Got DAGs with ETL Label at {datetime.now()}')
 
     # Populate the last 'dag_runs_limit' DagRuns for each DAG
     recent_runs_subquery = (
@@ -192,6 +200,8 @@ def get_dags(
     )
 
     recent_dag_runs = session.execute(recent_dag_runs_select)
+    if tags and 'ETL' in tags.tags_list:
+        logger.info(f'Populated recent runs for ETL label at {datetime.now()}')
 
     # Fetch pending HITL actions for each Dag if we are not certain whether some of the Dag might contain HITL actions
     pending_actions_by_dag_id: dict[str, list[HITLDetail]] = {dag.dag_id: [] for dag in dags}
