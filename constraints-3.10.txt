@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-28T20:01:44.622476
+# This constraints file was automatically generated on 2026-01-29T08:02:38.653334
 # via `uv pip install --resolution highest` for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version for 'apache-airflow' but installs
 # the providers from PIP-released packages at the moment of the constraint generation.
@@ -80,7 +80,7 @@ aiosignal==1.4.0
 aiosmtplib==5.1.0
 aiosqlite==0.21.0
 airbyte-api==0.53.0
-alembic==1.18.1
+alembic==1.18.2
 alibabacloud-adb20211201==3.7.1
 alibabacloud-credentials-api==1.0.0
 alibabacloud-credentials==1.0.7
@@ -290,7 +290,7 @@ gcsfs==2026.1.0
 geomet==1.1.0
 gevent==25.9.1
 gitdb==4.0.12
-google-ads==28.4.1
+google-ads==29.0.0
 google-analytics-admin==0.27.0
 google-api-core==2.29.0
 google-api-python-client==2.188.0
@@ -413,7 +413,7 @@ lazy-object-proxy==1.12.0
 libcst==1.8.6
 limits==5.6.0
 linkify-it-py==2.0.3
-litellm==1.81.4
+litellm==1.81.5
 lockfile==0.12.2
 looker_sdk==25.20.0
 lxml==6.0.2
