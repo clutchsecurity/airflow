@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-29T21:13:39.453131
+# This constraints file was automatically generated on 2026-01-30T09:03:18.327752
 # via `uv pip install --resolution highest` for the "v3-1-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version for 'apache-airflow' but installs
 # the providers from PIP-released packages at the moment of the constraint generation.
@@ -280,7 +280,7 @@ databricks-sql-connector==4.2.4
 dataclasses-json==0.6.7
 datadog==0.52.1
 db-dtypes==1.5.0
-debugpy==1.8.19
+debugpy==1.8.20
 decorator==5.2.1
 defusedxml==0.7.1
 deprecation==2.1.0
@@ -585,7 +585,7 @@ python-multipart==0.0.22
 python-slugify==8.0.4
 python-telegram-bot==22.6
 python3-saml==1.16.0
-pytokens==0.4.0
+pytokens==0.4.1
 pytz==2025.2
 pywinrm==0.5.0
 pyzmq==27.1.0

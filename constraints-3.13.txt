@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-29T21:13:17.769063
+# This constraints file was automatically generated on 2026-01-30T09:01:11.458593
 # via `uv pip install --resolution highest` for the "v3-1-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version for 'apache-airflow' but installs
 # the providers from PIP-released packages at the moment of the constraint generation.
@@ -255,7 +255,7 @@ databricks-sql-connector==4.2.4
 dataclasses-json==0.6.7
 datadog==0.52.1
 db-dtypes==1.5.0
-debugpy==1.8.19
+debugpy==1.8.20
 decorator==5.2.1
 defusedxml==0.7.1
 deprecation==2.1.0
@@ -502,7 +502,7 @@ prometheus_client==0.24.1
 prompt_toolkit==3.0.52
 propcache==0.4.1
 proto-plus==1.27.0
-protobuf==6.33.4
+protobuf==6.33.5
 psutil==7.2.2
 psycopg2-binary==2.9.11
 ptyprocess==0.7.0
@@ -545,7 +545,7 @@ python-ldap==3.4.5
 python-multipart==0.0.22
 python-slugify==8.0.4
 python-telegram-bot==22.6
-pytokens==0.4.0
+pytokens==0.4.1
 pytz==2025.2
 pywinrm==0.5.0
 pyzmq==27.1.0
