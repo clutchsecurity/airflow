@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-29T15:36:13.221287
+# This constraints file was automatically generated on 2026-01-29T21:09:53.060694
 # via `uv sync --resolution highest` for the "v3-1-test" branch of Airflow.
 # This variant of constraints install just the 'bare' 'apache-airflow' package build from the HEAD of
 # the branch, without installing any of the providers.
@@ -20,7 +20,7 @@ SQLAlchemy-Utils==0.42.1
 SQLAlchemy==1.4.54
 a2wsgi==1.10.10
 aiosqlite==0.21.0
-alembic==1.18.2
+alembic==1.18.3
 annotated-types==0.7.0
 anyio==4.12.1
 argcomplete==3.6.3
@@ -93,7 +93,7 @@ pytz==2025.2
 referencing==0.36.2
 requests==2.32.5
 rich-argparse==1.7.2
-rich-toolkit==0.17.1
+rich-toolkit==0.17.2
 rich==13.9.4
 rpds-py==0.30.0
 setproctitle==1.3.7

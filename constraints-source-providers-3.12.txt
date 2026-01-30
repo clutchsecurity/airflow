@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-29T15:36:05.899264
+# This constraints file was automatically generated on 2026-01-29T21:09:45.771896
 # via `uv sync --resolution highest for the "v3-1-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -60,7 +60,7 @@ aiosignal==1.4.0
 aiosqlite==0.21.0
 airbyte-api==0.53.0
 alabaster==1.0.0
-alembic==1.18.2
+alembic==1.18.3
 alibabacloud-adb20211201==3.7.1
 alibabacloud-credentials-api==1.0.0
 alibabacloud-credentials==1.0.7
@@ -227,15 +227,15 @@ google-cloud-aiplatform==1.135.0
 google-cloud-alloydb==0.7.0
 google-cloud-appengine-logging==1.8.0
 google-cloud-audit-log==0.4.0
-google-cloud-automl==2.18.0
+google-cloud-automl==2.18.1
 google-cloud-batch==0.20.0
 google-cloud-bigquery-datatransfer==3.21.0
 google-cloud-bigquery-storage==2.36.0
 google-cloud-bigquery==3.40.0
 google-cloud-bigtable==2.35.0
 google-cloud-build==3.35.0
-google-cloud-compute==1.42.0
-google-cloud-container==2.62.0
+google-cloud-compute==1.43.0
+google-cloud-container==2.63.0
 google-cloud-core==2.5.0
 google-cloud-datacatalog==3.29.0
 google-cloud-dataflow-client==0.11.0
@@ -398,7 +398,7 @@ mysql-connector-python==9.5.0
 mysqlclient==2.2.7
 natsort==8.4.0
 nbclient==0.10.4
-nbconvert==7.16.6
+nbconvert==7.17.0
 nbformat==5.10.4
 neo4j==6.1.0
 nest-asyncio==1.6.0
@@ -561,7 +561,7 @@ rfc3339-validator==0.1.4
 rfc3986==2.0.0
 rich-argparse==1.7.2
 rich-click==1.8.9
-rich-toolkit==0.17.1
+rich-toolkit==0.17.2
 rich==13.9.4
 roman-numerals==4.1.0
 rpds-py==0.30.0
@@ -694,7 +694,7 @@ vine==5.1.0
 virtualenv==20.36.1
 watchfiles==1.1.1
 watchtower==3.4.0
-wcwidth==0.5.0
+wcwidth==0.5.2
 weaviate-client==4.19.2
 webencodings==0.5.1
 websocket-client==1.9.0
