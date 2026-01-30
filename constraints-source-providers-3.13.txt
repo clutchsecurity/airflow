@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-01-30T07:56:32.259547
+# This constraints file was automatically generated on 2026-01-30T19:56:21.658747
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -290,7 +290,7 @@ ibm-cloud-sdk-core==3.24.2
 ibmcloudant==0.11.3
 icalendar==6.3.2
 icdiff==2.0.7
-id==1.5.0
+id==1.6.0
 identify==2.6.16
 idna==3.11
 ijson==3.4.0.post0
@@ -435,7 +435,7 @@ pathlib_abc==0.5.2
 pathspec==1.0.4
 pbr==7.0.3
 pdbr==0.9.7
-pendulum==3.1.0
+pendulum==3.2.0
 pexpect==4.9.0
 pgvector==0.4.2
 pinecone-plugin-interface==0.0.7
