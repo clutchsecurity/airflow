@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-01T07:57:29.232286
+# This constraints file was automatically generated on 2026-02-02T08:00:36.103439
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -121,7 +121,7 @@ azure-storage-file-datalake==12.23.0
 azure-storage-file-share==12.24.0
 azure-synapse-artifacts==0.21.0
 azure-synapse-spark==0.7.0
-babel==2.17.0
+babel==2.18.0
 backoff==2.2.1
 backports.asyncio.runner==1.2.0
 backports.strenum==1.3.1
@@ -581,7 +581,7 @@ rfc3339-validator==0.1.4
 rfc3986==2.0.0
 rich-argparse==1.7.2
 rich-click==1.8.9
-rich-toolkit==0.18.0
+rich-toolkit==0.18.1
 rich==13.9.4
 rpds-py==0.30.0
 rsa==4.9.1
