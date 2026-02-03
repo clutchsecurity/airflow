@@ -31,7 +31,7 @@ repos:
       - id: check-hooks-apply
         name: Check if all hooks apply to the repository
   - repo: https://github.com/eclipse-csi/octopin
-    rev: 4cf60063ce94dc61e8760462a9b223aa89676544
+    rev: 67eac129b3e1d8ddb47e657bb2fda28c33d948ca  # frozen: v0.1.4
     hooks:
       - id: pin-versions
         name: Pin versions of dependencies in CI workflows (manual)
@@ -183,6 +183,11 @@ repos:
         entry: ./scripts/ci/prek/check_min_python_version.py
         language: python
         require_serial: true
+      - id: check-notice-files
+        name: Check NOTICE files for current year and ASF references
+        entry: ./scripts/ci/prek/check_notice_files.py
+        language: python
+        files: ^.*NOTICE$
       - id: check-version-consistency
         name: Check version consistency
         entry: ./scripts/ci/prek/check_version_consistency.py
@@ -365,7 +370,7 @@ repos:
         types_or: [python, pyi]
         args: [--fix]
         require_serial: true
-        additional_dependencies: ['ruff==0.14.13']
+        additional_dependencies: ['ruff==0.14.14']
         exclude: ^airflow-core/tests/unit/dags/test_imports\.py$|^performance/tests/test_.*\.py$
       - id: ruff-format
         name: Run 'ruff format'

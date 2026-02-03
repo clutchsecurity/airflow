@@ -360,8 +360,10 @@ binary-reproduced when built from the sources.
 
 1) Set versions of the packages to be checked:
 
+Go to directory where your airflow sources are checked out and set the following environment variables:
+
 ```shell script
-cd <directory where airflow is checked out>
+export AIRFLOW_REPO_ROOT="$(pwd -P)"
 VERSION=X.Y.Z
 VERSION_SUFFIX=rc1
 VERSION_RC=${VERSION}${VERSION_SUFFIX}
@@ -436,6 +438,10 @@ present in SVN. This command may also help with verifying installation of the pa
 breeze release-management check-release-files python-client --version ${VERSION_RC}
 ```
 
+You can also follow the docker check that installs the distribution in a docker container and verifies
+that the package can be installed and imported correctly and print it's version. The command above prints
+instructions on how to do that.
+
 
 ### Licence check
 
@@ -505,6 +511,7 @@ Make sure you have imported into your GPG the PGP key of the person signing the 
 You can import the whole KEYS file:
 
 ```shell script
+wget https://dist.apache.org/repos/dist/release/airflow/KEYS
 gpg --import KEYS
 ```
 

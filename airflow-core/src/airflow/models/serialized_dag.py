@@ -414,7 +414,12 @@ class SerializedDagModel(Base):
         serialized_dag_hash = session.scalars(
             select(cls.dag_hash).where(cls.dag_id == dag.dag_id).order_by(cls.created_at.desc())
         ).first()
-        dag_version = DagVersion.get_latest_version(dag.dag_id, session=session)
+        dag_version = session.scalar(
+            select(DagVersion)
+            .where(DagVersion.dag_id == dag.dag_id)
+            .order_by(DagVersion.created_at.desc())
+            .limit(1)
+        )
 
         if (
             serialized_dag_hash == new_serialized_dag.dag_hash

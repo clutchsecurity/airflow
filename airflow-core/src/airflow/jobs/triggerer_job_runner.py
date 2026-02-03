@@ -74,9 +74,9 @@ from airflow.sdk.execution_time.comms import (
     _RequestFrame,
 )
 from airflow.sdk.execution_time.supervisor import WatchedSubprocess, make_buffered_socket_reader
-from airflow.triggers.base import BaseEventTrigger, BaseTrigger, DiscrimatedTriggerEvent, TriggerEvent
 from airflow.stats import Stats
 from airflow.traces.tracer import DebugTrace, Trace, add_debug_span
+from airflow.triggers.base import BaseEventTrigger, BaseTrigger, DiscrimatedTriggerEvent, TriggerEvent
 from airflow.utils.helpers import log_filename_template_renderer
 from airflow.utils.log.logging_mixin import LoggingMixin
 from airflow.utils.module_loading import import_string
@@ -759,6 +759,8 @@ class TriggerCommsDecoder(CommsDecoder[ToTriggerRunner, ToTriggerSupervisor]):
         factory=lambda: TypeAdapter(ToTriggerRunner), repr=False
     )
 
+    _lock: asyncio.Lock = attrs.field(factory=asyncio.Lock, repr=False)
+
     def _read_frame(self):
         from asgiref.sync import async_to_sync
 
@@ -793,7 +795,7 @@ class TriggerCommsDecoder(CommsDecoder[ToTriggerRunner, ToTriggerSupervisor]):
         frame = _RequestFrame(id=next(self.id_counter), body=msg.model_dump())
         bytes = frame.as_bytes()
 
-        async with self._async_lock:
+        async with self._lock:
             self._async_writer.write(bytes)
 
             return await self._aget_response(frame.id)
@@ -1105,7 +1107,7 @@ class TriggerRunner:
         except asyncio.IncompleteReadError:
             if task := asyncio.current_task():
                 task.cancel("EOF - shutting down")
-                return
+                return None
             raise
 
     async def block_watchdog(self):

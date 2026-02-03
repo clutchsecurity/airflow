@@ -16,18 +16,35 @@
 # specific language governing permissions and limitations
 # under the License.
 # /// script
-# requires-python = ">=3.10,<3.11"
-# dependencies = [
-#   "ruff==0.14.14",
-# ]
+# requires-python = ">=3.10, <3.11"
+# dependencies = []
 # ///
+"""
+Check that NOTICE files contain the current year and Apache Software Foundation reference.
+
+This script validates NOTICE files to ensure they:
+- Include the current year in copyright statements
+- Reference the Apache Software Foundation
+
+Usage: check_notice_files.py <notice_file_paths...>
+"""
 
 from __future__ import annotations
 
-import os
-import subprocess
+import sys
+from datetime import datetime
+from pathlib import Path
 
-ruff_format_cmd = "ruff format --force-exclude 2>&1 | grep -v '`ISC001`. To avoid unexpected behavior'"
-envcopy = os.environ.copy()
-envcopy["CLICOLOR_FORCE"] = "1"
-subprocess.run(ruff_format_cmd, shell=True, check=True, env=envcopy)
+CURRENT_YEAR = str(datetime.now().year)
+
+errors = 0
+
+for notice_file in sys.argv[1:]:
+    content = Path(notice_file).read_text()
+
+    expected = f"Copyright 2016-{CURRENT_YEAR} The Apache Software Foundation"
+    if "Copyright" in content and expected not in content:
+        print(f"❌ {notice_file}: Missing expected string: {expected!r}")
+        errors += 1
+
+sys.exit(1 if errors else 0)
