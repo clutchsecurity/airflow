@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-01T23:33:12.623924
+# This constraints file was automatically generated on 2026-02-03T08:03:32.749781
 # via `uv sync --resolution highest for the "v3-1-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -279,7 +279,7 @@ httpcore==1.0.9
 httplib2==0.22.0
 httptools==0.7.1
 httpx==0.28.1
-huggingface_hub==1.3.5
+huggingface_hub==1.3.7
 humanize==4.15.0
 hvac==2.4.0
 hyperframe==6.1.0
@@ -301,7 +301,7 @@ iniconfig==2.3.0
 inputimeout==1.0.4
 ipdb==0.13.13
 ipykernel==7.1.0
-ipython==9.9.0
+ipython==9.10.0
 ipython_pygments_lexers==1.1.1
 isodate==0.7.2
 itsdangerous==2.2.0
@@ -310,7 +310,7 @@ jaraco.context==6.1.0
 jaraco.functools==4.4.0
 jedi==0.19.2
 jeepney==0.9.0
-jiter==0.12.0
+jiter==0.13.0
 jmespath==0.10.0
 joblib==1.5.3
 joserfc==1.5.0
@@ -342,7 +342,7 @@ limits==5.6.0
 linkify-it-py==2.0.3
 litellm==1.81.6
 lockfile==0.12.2
-looker_sdk==25.20.0
+looker_sdk==26.0.0
 lxml==6.0.2
 lz4==4.4.5
 markdown-it-py==4.0.0
@@ -410,7 +410,7 @@ opentelemetry-semantic-conventions==0.60b1
 opsgenie-sdk==2.1.5
 oracledb==3.4.2
 ordered-set==4.1.0
-orjson==3.11.6
+orjson==3.11.7
 oss2==2.19.1
 outcome==1.3.0.post0
 packaging==26.0
@@ -449,7 +449,7 @@ presto-python-client==0.8.4
 prometheus_client==0.24.1
 prompt_toolkit==3.0.52
 propcache==0.4.1
-proto-plus==1.27.0
+proto-plus==1.27.1
 protobuf==6.33.5
 psutil==7.2.2
 psycopg-binary==3.3.2
@@ -564,7 +564,7 @@ smmap==5.0.2
 sniffio==1.3.1
 snowballstemmer==3.0.1
 snowflake-connector-python==4.2.0
-snowflake-snowpark-python==1.44.0
+snowflake-snowpark-python==1.45.0
 snowflake-sqlalchemy==1.8.2
 sortedcontainers==2.4.0
 soupsieve==2.8.3
@@ -599,7 +599,7 @@ strictyaml==1.7.3
 structlog==25.5.0
 svcs==25.1.0
 sympy==1.14.0
-tableauserverclient==0.38
+tableauserverclient==0.39
 tabulate==0.9.0
 tenacity==9.1.2
 teradatasql==20.0.0.50
