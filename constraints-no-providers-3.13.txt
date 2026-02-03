@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-02T07:59:56.087904
+# This constraints file was automatically generated on 2026-02-03T14:12:20.573760
 # via `uv sync --resolution highest` for the "main" branch of Airflow.
 # This variant of constraints install just the 'bare' 'apache-airflow' package build from the HEAD of
 # the branch, without installing any of the providers.
@@ -27,7 +27,7 @@ annotated-doc==0.0.4
 annotated-types==0.7.0
 anyio==4.12.1
 argcomplete==3.6.3
-asgiref==3.11.0
+asgiref==3.11.1
 attrs==25.4.0
 babel==2.18.0
 cadwyn==6.0.1
@@ -128,5 +128,5 @@ uvloop==0.22.1
 watchfiles==1.1.1
 websockets==15.0.1
 wirerope==1.0.0
-wrapt==2.1.0
+wrapt==2.1.1
 zipp==3.23.0
