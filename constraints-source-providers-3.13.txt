@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-03T14:12:13.263059
+# This constraints file was automatically generated on 2026-02-04T08:14:29.024355
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -41,7 +41,7 @@ a2wsgi==1.10.10
 adal==1.2.7
 adlfs==2025.8.0
 aenum==3.1.16
-aiobotocore==3.1.1
+aiobotocore==2.26.0
 aiofiles==24.1.0
 aiohappyeyeballs==2.6.1
 aiohttp==3.13.3
@@ -87,7 +87,7 @@ aws-xray-sdk==2.15.0
 azure-batch==14.2.0
 azure-common==1.1.28
 azure-core==1.38.0
-azure-cosmos==4.14.5
+azure-cosmos==4.14.6
 azure-datalake-store==0.0.53
 azure-identity==1.25.1
 azure-keyvault-secrets==4.10.0
@@ -119,8 +119,8 @@ bitarray==3.8.0
 black==26.1.0
 bleach==6.3.0
 blinker==1.9.0
-boto3==1.42.30
-botocore==1.42.30
+boto3==1.41.5
+botocore==1.41.5
 build==1.4.0
 cachetools==6.2.6
 cadwyn==6.0.1
@@ -145,7 +145,7 @@ colorama==0.4.6
 colorlog==6.10.1
 comm==0.2.3
 confluent-kafka==2.13.0
-coverage==7.13.2
+coverage==7.13.3
 crcmod==1.7
 cron_descriptor==2.0.6
 croniter==6.0.0
@@ -194,19 +194,19 @@ flit==3.12.0
 flit_core==3.12.0
 flower==2.0.1
 frozenlist==1.8.0
-fsspec==2026.1.0
+fsspec==2025.12.0
 future==1.0.0
 gcloud-aio-auth==5.4.2
 gcloud-aio-bigquery==7.1.0
 gcloud-aio-storage==9.6.1
-gcsfs==2026.1.0
+gcsfs==2025.12.0
 geomet==1.1.0
 gevent==25.9.1
 gitdb==4.0.12
-google-ads==29.0.0
+google-ads==28.1.1
 google-analytics-admin==0.27.0
-google-api-core==2.29.0
-google-api-python-client==2.188.0
+google-api-core==2.25.2
+google-api-python-client==2.189.0
 google-auth-httplib2==0.3.0
 google-auth-oauthlib==1.2.4
 google-auth==2.48.0
@@ -247,7 +247,7 @@ google-cloud-spanner==3.62.0
 google-cloud-speech==2.36.0
 google-cloud-storage-control==1.9.0
 google-cloud-storage-transfer==1.19.0
-google-cloud-storage==3.9.0
+google-cloud-storage==3.4.1
 google-cloud-tasks==2.21.0
 google-cloud-texttospeech==2.34.0
 google-cloud-translate==3.24.0
@@ -266,7 +266,8 @@ gremlinpython==3.8.0
 grpc-google-iam-v1==0.14.3
 grpc-interceptor==0.15.4
 grpcio-gcp==0.2.2
-grpcio-status==1.76.0
+grpcio-status==1.71.2
+grpcio-tools==1.71.2
 grpcio==1.76.0
 gssapi==1.11.1
 h11==0.16.0
@@ -341,9 +342,9 @@ kylinpy==2.8.4
 lazy-object-proxy==1.12.0
 libcst==1.8.6
 librt==0.7.8
-limits==5.6.0
+limits==5.7.0
 linkify-it-py==2.0.3
-litellm==1.81.6
+litellm==1.81.7
 lockfile==0.12.2
 looker_sdk==26.0.0
 lxml==5.4.0
@@ -457,7 +458,7 @@ prometheus_client==0.24.1
 prompt_toolkit==3.0.52
 propcache==0.4.1
 proto-plus==1.27.1
-protobuf==6.33.5
+protobuf==5.29.5
 psutil==7.2.2
 psycopg2-binary==2.9.11
 ptyprocess==0.7.0
@@ -549,9 +550,9 @@ roman-numerals==4.1.0
 rpds-py==0.30.0
 rsa==4.9.1
 ruamel.yaml==0.19.1
-ruff==0.14.14
-s3fs==2026.1.0
-s3transfer==0.16.0
+ruff==0.15.0
+s3fs==2025.12.0
+s3transfer==0.15.0
 sagemaker_studio==1.0.23
 scikit-learn==1.8.0
 scipy==1.17.0
@@ -608,7 +609,7 @@ strictyaml==1.7.3
 structlog==25.5.0
 svcs==25.1.0
 sympy==1.14.0
-tableauserverclient==0.38
+tableauserverclient==0.40
 tabulate==0.9.0
 tenacity==9.1.2
 teradatasql==20.0.0.50
@@ -628,7 +629,7 @@ tomli_w==1.2.0
 tomlkit==0.14.0
 tornado==6.5.4
 towncrier==25.8.0
-tqdm==4.67.2
+tqdm==4.67.3
 traitlets==5.14.3
 trino==0.336.0
 trove-classifiers==2026.1.14.14
@@ -667,7 +668,7 @@ uritemplate==4.2.0
 urllib3==2.6.3
 userpath==1.9.2
 uuid6==2025.0.1
-uv==0.9.28
+uv==0.9.29
 uvicorn==0.40.0
 uvloop==0.22.1
 validators==0.35.0
@@ -683,9 +684,11 @@ websocket-client==1.9.0
 websockets==15.0.1
 wheel==0.46.3
 wirerope==1.0.0
-wrapt==2.1.1
+wrapt==1.17.3
 xmltodict==1.0.2
 yamllint==1.38.0
+yandex-query-client==0.1.4
+yandexcloud==0.376.0
 yarl==1.22.0
 zeep==4.3.2
 zenpy==2.0.56
