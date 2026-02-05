@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-05T14:10:31.421151
+# This constraints file was automatically generated on 2026-02-05T20:03:57.244437
 # via `uv pip install --resolution highest` for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version for 'apache-airflow' but installs
 # the providers from PIP-released packages at the moment of the constraint generation.
@@ -241,7 +241,7 @@ click-plugins==1.1.1.2
 click-repl==0.3.0
 click==8.3.1
 cloudpickle==3.1.1
-cohere==5.20.2
+cohere==5.20.4
 colorlog==6.10.1
 comm==0.2.3
 confluent-kafka==2.13.0
@@ -276,7 +276,7 @@ eventlet==0.40.4
 executing==2.2.1
 facebook_business==24.0.1
 fastapi-cli==0.0.20
-fastapi==0.128.1
+fastapi==0.128.2
 fastavro==1.12.1
 fastjsonschema==2.21.2
 fastuuid==0.14.0
@@ -324,7 +324,7 @@ google-cloud-language==2.19.0
 google-cloud-logging==3.13.0
 google-cloud-managedkafka==0.3.0
 google-cloud-memcache==1.14.0
-google-cloud-monitoring==2.29.0
+google-cloud-monitoring==2.29.1
 google-cloud-orchestration-airflow==1.19.0
 google-cloud-os-login==2.19.0
 google-cloud-pubsub==2.34.0
@@ -333,7 +333,7 @@ google-cloud-resource-manager==1.16.0
 google-cloud-run==0.15.0
 google-cloud-secret-manager==2.26.0
 google-cloud-spanner==3.62.0
-google-cloud-speech==2.36.0
+google-cloud-speech==2.36.1
 google-cloud-storage-control==1.9.0
 google-cloud-storage-transfer==1.19.0
 google-cloud-storage==3.9.0
@@ -341,7 +341,7 @@ google-cloud-tasks==2.21.0
 google-cloud-texttospeech==2.34.0
 google-cloud-translate==3.24.0
 google-cloud-videointelligence==2.18.0
-google-cloud-vision==3.12.0
+google-cloud-vision==3.12.1
 google-cloud-workflows==1.20.0
 google-crc32c==1.8.0
 google-genai==1.62.0
@@ -453,7 +453,7 @@ neo4j==6.1.0
 nest-asyncio==1.6.0
 numpy==2.4.2
 oauthlib==3.3.1
-openai==2.16.0
+openai==2.17.0
 openlineage-integration-common==1.43.0
 openlineage-python==1.43.0
 openlineage_sql==1.43.0

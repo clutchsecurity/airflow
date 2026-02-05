@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-05T14:06:43.122025
+# This constraints file was automatically generated on 2026-02-05T20:00:00.632212
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -140,7 +140,7 @@ click-plugins==1.1.1.2
 click-repl==0.3.0
 click==8.1.8
 cloudpickle==3.1.1
-cohere==5.20.2
+cohere==5.20.4
 colorama==0.4.6
 colorlog==6.10.1
 comm==0.2.3
@@ -235,7 +235,7 @@ google-cloud-language==2.19.0
 google-cloud-logging==3.13.0
 google-cloud-managedkafka==0.3.0
 google-cloud-memcache==1.14.0
-google-cloud-monitoring==2.29.0
+google-cloud-monitoring==2.29.1
 google-cloud-orchestration-airflow==1.19.0
 google-cloud-os-login==2.19.0
 google-cloud-pubsub==2.34.0
@@ -244,7 +244,7 @@ google-cloud-resource-manager==1.16.0
 google-cloud-run==0.15.0
 google-cloud-secret-manager==2.26.0
 google-cloud-spanner==3.62.0
-google-cloud-speech==2.36.0
+google-cloud-speech==2.36.1
 google-cloud-storage-control==1.9.0
 google-cloud-storage-transfer==1.19.0
 google-cloud-storage==3.4.1
@@ -252,7 +252,7 @@ google-cloud-tasks==2.21.0
 google-cloud-texttospeech==2.34.0
 google-cloud-translate==3.24.0
 google-cloud-videointelligence==2.18.0
-google-cloud-vision==3.12.0
+google-cloud-vision==3.12.1
 google-cloud-workflows==1.20.0
 google-crc32c==1.8.0
 google-genai==1.62.0
@@ -396,7 +396,7 @@ nh3==0.3.2
 nodeenv==1.10.0
 numpy==2.4.2
 oauthlib==3.3.1
-openai==2.16.0
+openai==2.17.0
 openapi-schema-validator==0.6.3
 openapi-spec-validator==0.7.2
 openlineage-integration-common==1.43.0
@@ -692,7 +692,7 @@ yandex-query-client==0.1.4
 yandexcloud==0.376.0
 yarl==1.22.0
 ydb-dbapi==0.1.18
-ydb==3.26.1
+ydb==3.26.2
 zeep==4.3.2
 zenpy==2.0.56
 zipp==3.23.0
