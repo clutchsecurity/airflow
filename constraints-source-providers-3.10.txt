@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-06T08:00:21.747884
+# This constraints file was automatically generated on 2026-02-06T14:05:40.854334
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -295,7 +295,7 @@ grpcio-status==1.62.3
 grpcio==1.65.5
 grpclib==0.4.9
 gssapi==1.11.1
-gunicorn==25.0.1
+gunicorn==25.0.2
 h11==0.16.0
 h2==4.3.0
 hatch==1.16.3
@@ -308,7 +308,7 @@ httpcore==1.0.9
 httplib2==0.22.0
 httptools==0.7.1
 httpx==0.28.1
-huggingface_hub==1.4.0
+huggingface_hub==1.4.1
 humanize==4.15.0
 hvac==2.4.0
 hyperframe==6.1.0
@@ -483,7 +483,7 @@ polars==1.38.0
 portalocker==3.2.0
 pprintpp==0.4.0
 pre_commit==4.5.1
-prek==0.3.1
+prek==0.3.2
 presto-python-client==0.8.4
 prison==0.2.1
 prometheus_client==0.24.1
@@ -726,7 +726,7 @@ yandex-query-client==0.1.4
 yandexcloud==0.328.0
 yarl==1.22.0
 ydb-dbapi==0.1.18
-ydb==3.26.2
+ydb==3.26.3
 zeep==4.3.2
 zenpy==2.0.56
 zipp==3.23.0
