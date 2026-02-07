@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-06T14:06:17.319170
+# This constraints file was automatically generated on 2026-02-07T19:51:04.195402
 # via `uv sync --resolution highest` for the "main" branch of Airflow.
 # This variant of constraints install just the 'bare' 'apache-airflow' package build from the HEAD of
 # the branch, without installing any of the providers.
@@ -41,7 +41,7 @@ dill==0.4.1
 dnspython==2.8.0
 email-validator==2.3.0
 fastapi-cli==0.0.20
-fastapi==0.128.2
+fastapi==0.128.3
 fsspec==2025.12.0
 googleapis-common-protos==1.72.0
 greenback==1.3.0
@@ -105,11 +105,11 @@ shellingham==1.5.4
 six==1.17.0
 sniffio==1.3.1
 sqlparse==0.5.5
-starlette==0.50.0
+starlette==0.52.1
 structlog==25.5.0
 svcs==25.1.0
 tabulate==0.9.0
-tenacity==9.1.3
+tenacity==9.1.4
 termcolor==3.3.0
 text-unidecode==1.3
 typer==0.21.1
@@ -120,7 +120,7 @@ uc-micro-py==1.0.3
 universal_pathlib==0.3.9
 urllib3==2.6.3
 uuid6==2025.0.1
-uv==0.9.30
+uv==0.10.0
 uvicorn==0.40.0
 uvloop==0.22.1
 watchfiles==1.1.1
