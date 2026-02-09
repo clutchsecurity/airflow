@@ -1058,6 +1058,12 @@ def get_provider_info():
                 "python-modules": ["airflow.providers.google.cloud.hooks.cloud_logging"],
             },
         ],
+        "bundles": [
+            {
+                "integration-name": "Google Cloud Storage (GCS)",
+                "python-modules": ["airflow.providers.google.cloud.bundles.gcs"],
+            }
+        ],
         "triggers": [
             {
                 "integration-name": "Google BigQuery Data Transfer Service",
