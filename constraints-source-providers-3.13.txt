@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-07T17:57:14.394840
+# This constraints file was automatically generated on 2026-02-11T23:33:37.797781
 # via `uv sync --resolution highest for the "v3-1-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -20,9 +20,9 @@ Incremental==24.11.0
 JayDeBeApi==1.2.3
 Jinja2==3.1.6
 Mako==1.3.10
-Markdown==3.10.1
+Markdown==3.10.2
 MarkupSafe==3.0.3
-PyAthena==3.26.0
+PyAthena==3.27.1
 PyGithub==2.8.1
 PyHive==0.7.0
 PyJWT==2.11.0
@@ -39,7 +39,7 @@ Sphinx==9.1.0
 Werkzeug==3.1.5
 a2wsgi==1.10.10
 adal==1.2.7
-adlfs==2025.8.0
+adlfs==2026.2.0
 aenum==3.1.16
 aiobotocore==2.26.0
 aiofiles==24.1.0
@@ -52,7 +52,7 @@ aiosignal==1.4.0
 aiosqlite==0.21.0
 airbyte-api==0.53.0
 alabaster==1.0.0
-alembic==1.18.3
+alembic==1.18.4
 alibabacloud-adb20211201==3.7.1
 alibabacloud-credentials-api==1.0.0
 alibabacloud-credentials==1.0.7
@@ -63,6 +63,7 @@ alibabacloud_gateway_spi==0.0.3
 aliyun-python-sdk-core==2.16.0
 aliyun-python-sdk-kms==2.16.5
 amqp==5.3.1
+annotated-doc==0.0.4
 annotated-types==0.7.0
 ansicolors==1.1.8
 anyio==4.12.1
@@ -84,10 +85,10 @@ aws-sam-translator==1.107.0
 aws-xray-sdk==2.15.0
 azure-batch==14.2.0
 azure-common==1.1.28
-azure-core==1.38.0
+azure-core==1.38.1
 azure-cosmos==4.14.6
 azure-datalake-store==0.0.53
-azure-identity==1.25.1
+azure-identity==1.25.2
 azure-keyvault-secrets==4.10.0
 azure-kusto-data==6.0.1
 azure-mgmt-containerinstance==10.1.0
@@ -138,19 +139,19 @@ click-plugins==1.1.1.2
 click-repl==0.3.0
 click==8.1.8
 cloudpickle==3.1.1
-cohere==5.20.4
+cohere==5.20.5
 colorama==0.4.6
 colorlog==6.10.1
 comm==0.2.3
 confluent-kafka==2.13.0
-coverage==7.13.3
+coverage==7.13.4
 crcmod==1.7
 cron_descriptor==2.0.6
 croniter==6.0.0
 cryptography==44.0.3
 curlify==3.0.0
 darabonba-core==1.0.5
-databricks-sql-connector==4.2.4
+databricks-sql-connector==4.2.5
 databricks-sqlalchemy==2.0.8
 dataclasses-json==0.6.7
 datadog==0.52.1
@@ -158,7 +159,7 @@ db-dtypes==1.5.0
 debugpy==1.8.20
 decorator==5.2.1
 defusedxml==0.7.1
-deltalake==1.4.1
+deltalake==1.4.2
 deprecation==2.1.0
 diagrams==0.25.1
 dill==0.4.1
@@ -182,7 +183,7 @@ eventlet==0.40.4
 execnet==2.1.2
 executing==2.2.1
 facebook_business==24.0.1
-fastapi-cli==0.0.20
+fastapi-cli==0.0.21
 fastapi==0.117.1
 fastavro==1.12.1
 fastjsonschema==2.21.2
@@ -201,14 +202,14 @@ gcsfs==2025.12.0
 geomet==1.1.0
 gevent==25.9.1
 gitdb==4.0.12
-google-ads==29.0.0
+google-ads==29.1.0
 google-analytics-admin==0.27.0
 google-api-core==2.29.0
 google-api-python-client==2.189.0
 google-auth-httplib2==0.2.1
 google-auth-oauthlib==1.2.4
 google-auth==2.48.0
-google-cloud-aiplatform==1.136.0
+google-cloud-aiplatform==1.137.0
 google-cloud-alloydb==0.7.0
 google-cloud-appengine-logging==1.8.0
 google-cloud-audit-log==0.4.0
@@ -284,15 +285,15 @@ humanize==4.15.0
 hvac==2.4.0
 hyperframe==6.1.0
 hyperlink==21.0.0
-ibm-cloud-sdk-core==3.24.2
-ibmcloudant==0.11.3
-icdiff==2.0.7
+ibm-cloud-sdk-core==3.24.4
+ibmcloudant==0.11.4
+icdiff==2.0.10
 id==1.6.1
 identify==2.6.16
 idna==3.11
 ijson==3.4.0.post0
 imagesize==1.4.1
-immutabledict==4.2.2
+immutabledict==4.3.0
 importlib_metadata==8.7.1
 impyla==0.22.0
 inflection==0.5.1
@@ -340,7 +341,7 @@ libcst==1.8.6
 librt==0.7.8
 limits==5.8.0
 linkify-it-py==2.0.3
-litellm==1.81.8
+litellm==1.81.10
 lockfile==0.12.2
 looker_sdk==26.0.0
 lxml==6.0.2
@@ -359,7 +360,7 @@ microsoft-kiota-serialization-text==1.9.8
 mistune==3.2.0
 mmh3==5.2.0
 more-itertools==10.8.0
-moto==5.1.20
+moto==5.1.21
 mpmath==1.3.0
 msal-extensions==1.3.1
 msal==1.34.0
@@ -370,13 +371,13 @@ msrestazure==0.6.4.post1
 multi_key_dict==2.0.3
 multidict==6.7.1
 mypy-boto3-appflow==1.42.3
-mypy-boto3-rds==1.42.28
+mypy-boto3-rds==1.42.46
 mypy-boto3-redshift-data==1.42.3
 mypy-boto3-s3==1.42.37
 mypy==1.19.1
 mypy_extensions==1.1.0
 mysql-connector-python==9.5.0
-mysqlclient==2.2.7
+mysqlclient==2.2.8
 natsort==8.4.0
 nbclient==0.10.4
 nbconvert==7.17.0
@@ -388,7 +389,7 @@ nh3==0.3.2
 nodeenv==1.10.0
 numpy==2.2.6
 oauthlib==3.3.1
-openai==2.17.0
+openai==2.20.0
 openapi-schema-validator==0.6.3
 openapi-spec-validator==0.7.2
 openlineage-integration-common==1.43.0
@@ -423,7 +424,7 @@ pandas==2.3.3
 pandocfilters==1.5.1
 papermill==2.6.0
 paramiko==3.5.1
-parso==0.8.5
+parso==0.8.6
 pathable==0.4.4
 pathspec==1.0.4
 pbr==7.0.3
@@ -475,10 +476,10 @@ pydruid==0.6.9
 pyenchant==3.3.0
 pyexasol==1.1.0
 pygtrie==2.5.0
-pyiceberg==0.10.0
+pyiceberg==0.11.0
 pykerberos==1.2.4
 pymongo==4.16.0
-pymssql==2.3.11
+pymssql==2.3.12
 pyodbc==5.3.0
 pyodps==0.12.5.1
 pyparsing==3.3.2
@@ -498,7 +499,7 @@ pytest-timeouts==1.2.1
 pytest-unordered==0.7.0
 pytest-xdist==3.8.0
 pytest==9.0.2
-python-arango==8.2.6
+python-arango==8.3.0
 python-daemon==3.1.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
@@ -535,7 +536,7 @@ rfc3339-validator==0.1.4
 rfc3986==2.0.0
 rich-argparse==1.7.2
 rich-click==1.8.9
-rich-toolkit==0.18.1
+rich-toolkit==0.19.3
 rich==13.9.4
 roman-numerals==4.1.0
 rpds-py==0.30.0
@@ -558,8 +559,8 @@ setuptools==81.0.0
 shellingham==1.5.4
 simple-salesforce==1.12.9
 six==1.17.0
-slack_sdk==3.39.0
-smbprotocol==1.15.0
+slack_sdk==3.40.0
+smbprotocol==1.16.0
 smmap==5.0.2
 sniffio==1.3.1
 snowballstemmer==3.0.1
@@ -623,10 +624,10 @@ traitlets==5.14.3
 trino==0.336.0
 trove-classifiers==2026.1.14.14
 twine==6.2.0
-typer-slim==0.21.1
-typer==0.21.1
+typer-slim==0.23.0
+typer==0.23.0
 types-Deprecated==1.3.1.20260130
-types-Markdown==3.10.0.20251106
+types-Markdown==3.10.2.20260211
 types-PyMySQL==1.1.0.20251220
 types-PyYAML==6.0.12.20250915
 types-aiofiles==25.1.0.20251011
@@ -643,7 +644,7 @@ types-python-slugify==8.0.2.20240310
 types-pytz==2025.2.0.20251108
 types-redis==4.6.0.20241004
 types-requests==2.32.4.20260107
-types-setuptools==80.10.0.20260124
+types-setuptools==82.0.0.20260210
 types-tabulate==0.9.0.20241207
 types-toml==0.10.8.20240310
 typing-inspect==0.9.0
