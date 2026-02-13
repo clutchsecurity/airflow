@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-07T22:49:49.948753
+# This constraints file was automatically generated on 2026-02-13T10:15:23.371616
 # via "eager-upgrade" mechanism of PIP. For the "v2-11-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider packages.
@@ -14,7 +14,7 @@ Authlib==1.6.7
 ConfigUpdater==3.2
 Deprecated==1.3.1
 Events==0.5
-Flask-AppBuilder==4.5.3
+Flask-AppBuilder==4.5.4
 Flask-Babel==2.0.0
 Flask-Bcrypt==1.0.1
 Flask-Caching==2.3.1
@@ -30,9 +30,9 @@ Incremental==24.11.0
 JayDeBeApi==1.2.3
 Jinja2==3.1.6
 Mako==1.3.10
-Markdown==3.10.1
+Markdown==3.10.2
 MarkupSafe==3.0.3
-PyAthena==3.26.0
+PyAthena==3.27.1
 PyGithub==2.8.1
 PyHive==0.7.0
 PyJWT==2.11.0
@@ -47,7 +47,7 @@ Sphinx==9.0.4
 WTForms==3.2.1
 Werkzeug==3.1.5
 adal==1.2.7
-adlfs==2025.8.0
+adlfs==2026.2.0
 aiobotocore==3.1.2
 aiofiles==24.1.0
 aiohappyeyeballs==2.6.1
@@ -57,7 +57,7 @@ aioitertools==0.13.0
 aioresponses==0.7.8
 aiosignal==1.4.0
 alabaster==1.0.0
-alembic==1.18.3
+alembic==1.18.4
 alibabacloud-adb20211201==3.7.1
 alibabacloud-credentials-api==1.0.0
 alibabacloud-credentials==1.0.7
@@ -90,10 +90,10 @@ aws-sam-translator==1.107.0
 aws-xray-sdk==2.15.0
 azure-batch==14.2.0
 azure-common==1.1.28
-azure-core==1.38.0
+azure-core==1.38.1
 azure-cosmos==4.14.6
 azure-datalake-store==0.0.53
-azure-identity==1.25.1
+azure-identity==1.25.2
 azure-keyvault-secrets==4.10.0
 azure-kusto-data==6.0.1
 azure-mgmt-containerinstance==10.1.0
@@ -155,7 +155,7 @@ colorlog==6.10.1
 comm==0.2.3
 confluent-kafka==2.13.0
 connexion==2.15.1
-coverage==7.13.3
+coverage==7.13.4
 crcmod==1.7
 cron_descriptor==2.0.6
 croniter==6.0.0
@@ -168,7 +168,7 @@ db-dtypes==1.5.0
 debugpy==1.8.20
 decorator==5.2.1
 defusedxml==0.7.1
-deltalake==1.4.1
+deltalake==1.4.2
 deprecation==2.1.0
 diagrams==0.25.1
 dill==0.4.1
@@ -195,7 +195,7 @@ facebook_business==24.0.1
 fastavro==1.12.1
 fasteners==0.20
 fastjsonschema==2.21.2
-filelock==3.20.3
+filelock==3.21.2
 flower==2.0.1
 frozenlist==1.8.0
 fsspec==2026.2.0
@@ -207,14 +207,14 @@ gcsfs==2026.2.0
 geomet==1.1.0
 gevent==25.9.1
 gitdb==4.0.12
-google-ads==29.0.0
+google-ads==29.1.0
 google-analytics-admin==0.27.0
 google-api-core==2.29.0
-google-api-python-client==2.189.0
+google-api-python-client==2.190.0
 google-auth-httplib2==0.3.0
 google-auth-oauthlib==1.2.4
 google-auth==2.48.0
-google-cloud-aiplatform==1.136.0
+google-cloud-aiplatform==1.137.0
 google-cloud-appengine-logging==1.8.0
 google-cloud-audit-log==0.4.0
 google-cloud-automl==2.18.1
@@ -228,7 +228,7 @@ google-cloud-container==2.63.0
 google-cloud-core==2.5.0
 google-cloud-datacatalog==3.29.0
 google-cloud-dataflow-client==0.11.0
-google-cloud-dataform==0.8.0
+google-cloud-dataform==0.9.0
 google-cloud-dataplex==2.16.0
 google-cloud-dataproc-metastore==1.21.0
 google-cloud-dataproc==5.24.0
@@ -245,9 +245,9 @@ google-cloud-redis==2.20.0
 google-cloud-resource-manager==1.16.0
 google-cloud-run==0.15.0
 google-cloud-secret-manager==2.26.0
-google-cloud-spanner==3.62.0
+google-cloud-spanner==3.63.0
 google-cloud-speech==2.36.1
-google-cloud-storage-control==1.9.0
+google-cloud-storage-control==1.10.0
 google-cloud-storage-transfer==1.19.0
 google-cloud-storage==3.9.0
 google-cloud-tasks==2.21.0
@@ -257,7 +257,7 @@ google-cloud-videointelligence==2.18.0
 google-cloud-vision==3.12.1
 google-cloud-workflows==1.20.0
 google-crc32c==1.8.0
-google-genai==1.62.0
+google-genai==1.63.0
 google-re2==1.1.20251105
 google-resumable-media==2.8.0
 googleapis-common-protos==1.72.0
@@ -286,7 +286,7 @@ humanize==4.15.0
 hvac==2.4.0
 hyperframe==6.1.0
 hyperlink==21.0.0
-icdiff==2.0.7
+icdiff==2.0.10
 id==1.6.1
 identify==2.6.16
 idna==3.11
@@ -364,13 +364,13 @@ msrestazure==0.6.4.post1
 multi_key_dict==2.0.3
 multidict==6.7.1
 mypy-boto3-appflow==1.42.3
-mypy-boto3-rds==1.42.28
+mypy-boto3-rds==1.42.46
 mypy-boto3-redshift-data==1.42.3
 mypy-boto3-s3==1.42.37
 mypy==1.9.0
 mypy_extensions==1.1.0
 mysql-connector-python==9.6.0
-mysqlclient==2.2.7
+mysqlclient==2.2.8
 nbclient==0.10.4
 nbformat==5.10.4
 neo4j==6.1.0
@@ -381,7 +381,7 @@ nodeenv==1.10.0
 numpy==1.26.4
 oauthlib==3.3.1
 objsize==0.7.1
-openai==2.17.0
+openai==2.20.0
 openapi-schema-validator==0.6.3
 openapi-spec-validator==0.7.2
 openlineage-integration-common==1.43.0
@@ -410,7 +410,7 @@ pandas-stubs==3.0.0.260204
 pandas==2.1.4
 papermill==2.6.0
 paramiko==3.5.1
-parso==0.8.5
+parso==0.8.6
 pathable==0.4.4
 pathspec==1.0.4
 pbr==7.0.3
@@ -422,7 +422,7 @@ pinecone-plugin-interface==0.0.7
 pinecone==7.0.1
 pinotdb==9.0.0
 pipdeptree==2.30.0
-platformdirs==4.5.1
+platformdirs==4.7.0
 pluggy==1.6.0
 ply==3.11
 plyvel==1.5.1
@@ -458,10 +458,10 @@ pydruid==0.6.9
 pyenchant==3.3.0
 pyexasol==1.1.0
 pygraphviz==1.14
-pyiceberg==0.10.0
+pyiceberg==0.11.0
 pykerberos==1.2.4
 pymongo==4.16.0
-pymssql==2.3.11
+pymssql==2.3.12
 pyodbc==5.3.0
 pyparsing==3.3.2
 pyproject_hooks==1.2.0
@@ -479,7 +479,7 @@ pytest-rerunfailures==16.1
 pytest-timeouts==1.2.1
 pytest-xdist==3.8.0
 pytest==8.2.1
-python-arango==8.2.6
+python-arango==8.3.0
 python-daemon==3.1.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
@@ -532,8 +532,8 @@ setproctitle==1.3.7
 shellingham==1.5.4
 simple-salesforce==1.12.9
 six==1.17.0
-slack_sdk==3.39.0
-smbprotocol==1.15.0
+slack_sdk==3.40.0
+smbprotocol==1.16.0
 smmap==5.0.2
 sniffio==1.3.1
 snowballstemmer==3.0.1
@@ -542,7 +542,7 @@ snowflake-sqlalchemy==1.8.2
 sortedcontainers==2.4.0
 soupsieve==2.8.3
 sphinx-argparse==0.5.2
-sphinx-autoapi==3.6.1
+sphinx-autoapi==3.7.0
 sphinx-copybutton==0.5.2
 sphinx-jinja==2.0.2
 sphinx_airflow_theme==0.2.2
@@ -591,7 +591,7 @@ trino==0.336.0
 trove-classifiers==2026.1.14.14
 twine==6.2.0
 types-Deprecated==1.3.1.20260130
-types-Markdown==3.10.0.20251106
+types-Markdown==3.10.2.20260211
 types-PyMySQL==1.1.0.20251220
 types-PyYAML==6.0.12.20250915
 types-aiofiles==25.1.0.20251011
@@ -607,7 +607,7 @@ types-python-slugify==8.0.2.20240310
 types-pytz==2025.2.0.20251108
 types-redis==4.6.0.20241004
 types-requests==2.32.4.20260107
-types-setuptools==80.10.0.20260124
+types-setuptools==82.0.0.20260210
 types-tabulate==0.9.0.20241207
 types-termcolor==1.1.6.2
 types-toml==0.10.8.20240310
@@ -638,7 +638,7 @@ yamllint==1.38.0
 yandex-query-client==0.1.4
 yandexcloud==0.328.0
 yarl==1.22.0
-ydb==3.26.3
+ydb==3.26.4
 zeep==4.3.2
 zenpy==2.0.56
 zipp==3.23.0
