@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-13T10:15:23.371616
+# This constraints file was automatically generated on 2026-02-13T15:28:22.658179
 # via "eager-upgrade" mechanism of PIP. For the "v2-11-test" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider packages.
@@ -271,7 +271,7 @@ grpcio-status==1.62.3
 grpcio==1.65.5
 grpclib==0.4.9
 gssapi==1.11.1
-gunicorn==25.0.3
+gunicorn==25.1.0
 h11==0.16.0
 h2==4.3.0
 hatch==1.16.3
