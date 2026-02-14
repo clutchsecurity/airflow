@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-14T18:00:09.468220
+# This constraints file was automatically generated on 2026-02-14T21:39:17.262027
 # via "eager-upgrade" mechanism of PIP. For the "v2-11-test" branch of Airflow.
 # This variant of constraints install just the 'bare' 'apache-airflow' package build from the HEAD of
 # the branch, without installing any of the providers.
@@ -132,7 +132,7 @@ packaging==26.0
 pandas==2.1.4
 pathspec==1.0.4
 pendulum==3.2.0
-platformdirs==4.9.0
+platformdirs==4.9.1
 pluggy==1.6.0
 plyvel==1.5.1
 prison==0.2.1
