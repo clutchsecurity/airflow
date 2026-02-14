@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-14T14:02:32.983748
+# This constraints file was automatically generated on 2026-02-14T19:55:37.918248
 # via `uv pip install --resolution highest` for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version for 'apache-airflow' but installs
 # the providers from PIP-released packages at the moment of the constraint generation.
@@ -305,7 +305,7 @@ fastavro==1.12.1
 fasteners==0.20
 fastjsonschema==2.21.2
 fastuuid==0.14.0
-filelock==3.23.0
+filelock==3.24.0
 flask-babel==4.0.0
 flower==2.0.1
 frozenlist==1.8.0
@@ -528,7 +528,7 @@ pgvector==0.4.2
 pinecone-plugin-interface==0.0.7
 pinecone==7.0.1
 pinotdb==9.0.0
-platformdirs==4.8.0
+platformdirs==4.9.0
 pluggy==1.6.0
 ply==3.11
 polars-runtime-32==1.38.1
