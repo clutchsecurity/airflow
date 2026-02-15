@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-14T19:51:42.240950
+# This constraints file was automatically generated on 2026-02-15T02:27:52.101659
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -371,7 +371,7 @@ libcst==1.8.6
 librt==0.8.0
 limits==5.8.0
 linkify-it-py==2.0.3
-litellm==1.81.11
+litellm==1.81.12
 lockfile==0.12.2
 looker_sdk==26.2.0
 lxml==6.0.2
@@ -474,7 +474,7 @@ pinecone-plugin-interface==0.0.7
 pinecone==7.0.1
 pinotdb==9.0.0
 pipdeptree==2.30.0
-platformdirs==4.9.0
+platformdirs==4.9.1
 pluggy==1.6.0
 ply==3.11
 plyvel==1.5.1
