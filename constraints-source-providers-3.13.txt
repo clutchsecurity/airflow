@@ -1,6 +1,6 @@
 
 #
-# This constraints file was automatically generated on 2026-02-15T02:27:07.235338
+# This constraints file was automatically generated on 2026-02-15T07:56:30.344187
 # via `uv sync --resolution highest for the "main" branch of Airflow.
 # This variant of constraints install uses the HEAD of the branch version of both
 # 'apache-airflow' package and all available community provider distributions.
@@ -694,7 +694,7 @@ websockets==15.0.1
 wheel==0.46.3
 wirerope==1.0.0
 wrapt==1.17.3
-xmltodict==1.0.2
+xmltodict==1.0.3
 yamllint==1.38.0
 yandex-query-client==0.1.4
 yandexcloud==0.377.0
