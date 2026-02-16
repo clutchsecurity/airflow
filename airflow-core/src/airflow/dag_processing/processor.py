@@ -171,6 +171,8 @@ def _pre_import_airflow_modules(file_path: str, log: FilteringBoundLogger) -> No
 
 
 def _parse_file_entrypoint():
+    import cProfile
+
     # Mark as client-side (runs user DAG code)
     # Prevents inheriting server context from parent DagProcessorManager
     os.environ["_AIRFLOW_PROCESS_CONTEXT"] = "client"
@@ -191,7 +193,16 @@ def _parse_file_entrypoint():
     task_runner.SUPERVISOR_COMMS = comms_decoder
     log = structlog.get_logger(logger_name="task")
 
+    profiler = cProfile.Profile()
+    profiler.enable()
+
     result = _parse_file(msg, log)
+
+    profiler.disable()
+    prof_path = f"/tmp/dag_parse_{os.getpid()}_{Path(msg.file).stem}.prof"
+    profiler.dump_stats(prof_path)
+    log.info("Profiling data saved", path=prof_path)
+
     if result is not None:
         comms_decoder.send(result)
 
