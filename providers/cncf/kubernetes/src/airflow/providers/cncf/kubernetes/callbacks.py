@@ -19,16 +19,20 @@ from __future__ import annotations
 from enum import Enum
 from typing import TYPE_CHECKING, TypeAlias
 
-import kubernetes.client as k8s
-import kubernetes_asyncio.client as async_k8s
-
 if TYPE_CHECKING:
+    import kubernetes.client as k8s
+    import kubernetes_asyncio.client as async_k8s
     from pendulum import DateTime
 
     from airflow.providers.cncf.kubernetes.operators.pod import KubernetesPodOperator
     from airflow.sdk import Context
 
-client_type: TypeAlias = k8s.CoreV1Api | async_k8s.CoreV1Api
+    # All annotations in this module are strings (PEP 563, ``from __future__ import
+    # annotations``), so this alias only needs to exist for static type checkers. Keeping
+    # the ``kubernetes`` / ``kubernetes_asyncio`` client imports out of module scope avoids
+    # eagerly importing the (heavy) async client at DAG parse time — it is only needed at
+    # runtime in the triggerer for deferrable pods.
+    client_type: TypeAlias = k8s.CoreV1Api | async_k8s.CoreV1Api
 
 
 class ExecutionMode(str, Enum):
