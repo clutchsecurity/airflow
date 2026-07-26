@@ -289,7 +289,21 @@ def _serialize_dag_capturing_errors(
         if not dag_was_updated:
             # Check and update DagCode
             DagCode.update_source_code(dag.dag_id, dag.fileloc, session=session)
-        if "FabAuthManager" in conf.get("core", "auth_manager"):
+        # Only sync per-DAG FAB resources when the DAG defines explicit access_control.
+        #
+        # sync_perm_for_dag() creates/refreshes a `DAG:<dag_id>` resource (ab_view_menu +
+        # ab_permission_view rows) for *every* DAG on *every* parse, inside the same
+        # transaction that holds SELECT ... FOR UPDATE row locks on the `dag`/`dag_run`
+        # tables (see DagModelOperation.find_orm_dags / update_dag_parsing_results_in_db).
+        # With a large number of dynamically-generated DAGs this per-DAG sync dominates the
+        # parse transaction's lock-hold time and starves the scheduler, which since 3.2.0
+        # writes `exceeds_max_non_backfill` to `dag` rows inside its critical section and
+        # blocks behind that lock.
+        #
+        # When a DAG defines no per-DAG access_control, those per-DAG resources are unused:
+        # DAG-level access is already granted through the global DAG resource on the role.
+        # Skipping the sync in that case removes the contention without changing authz.
+        if "FabAuthManager" in conf.get("core", "auth_manager") and dag.access_control:
             _sync_dag_perms(dag, session=session)
 
         return []
